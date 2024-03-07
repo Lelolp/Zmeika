@@ -37,6 +37,11 @@ def ded_control():
         elif ch == "d":
             xv = 1
             yv = 0
+        elif ch == "p":
+            pause = True
+            while pause:
+                if msvcrt.kbhit():
+                    pause = False
     xp += xv
     yp += yv
     # if hp >= 0:
@@ -56,7 +61,7 @@ def screen_control():
             elif x == xd and y == yd:
                 print("🥟", end="")
             else:
-                print("⬜", end="")
+                print("🟦", end="")
 
         print()
 
@@ -74,7 +79,7 @@ yd = random.randint(1, height - 2)
 
 pygame.init()
 pygame.mixer.music.load("C:/Users\danik\PycharmPygame\SUPER ZMEIKA\zmeiground.wav")
-pygame.mixer.music.set_volume(0.3)
+pygame.mixer.music.set_volume(0.2)
 pygame.mixer.music.play(-1)
 
 while hp > 0:
