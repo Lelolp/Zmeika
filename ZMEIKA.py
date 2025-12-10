@@ -78,9 +78,9 @@ xd = random.randint(1, widht - 2)
 yd = random.randint(1, height - 2)
 
 pygame.init()
-pygame.mixer.music.load("C:/Users\danik\PycharmPygame\SUPER ZMEIKA\zmeiground.wav")
-pygame.mixer.music.set_volume(0.2)
-pygame.mixer.music.play(-1)
+#pygame.mixer.music.load("C:/Users\danik\PycharmPygame\SUPER ZMEIKA\zmeiground.wav")
+#pygame.mixer.music.set_volume(0.2)
+#pygame.mixer.music.play(-1)
 
 while hp > 0:
     ded_control()
